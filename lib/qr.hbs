@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>{{projectName}}</title>
+  <link rel="stylesheet" href="./zindex/css/bootstrap.min.css">
+  <style>
+    a {
+      color: #333;
+    }
+
+    .marketing {
+      text-align: center;
+    }
+
+    .qrcode-img {
+      margin: 20px 0;
+    }
+
+    .qrcode-img canvas,
+    .qrcode-img img,
+    .qr-img canvas,
+    .qr-img img {
+      margin: 0 auto;
+    }
+
+    .modal-backdrop {
+      filter: alpha(opacity=100) !important;
+      opacity: 1 !important;
+    }
+
+    .jumbotron {
+      background-color: #282c34;
+      color: #fff;
+    }
+
+    .jumbotron h1 {
+      color: #61dafb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>{{projectName}}</h1>
+      <p>
+        点击按钮链接打开项目页面，也可以扫描二维码在移动端同步浏览测试页面。
+      </p>
+      <p>
+        <a class="btn btn-primary" href="https://github.com/chanjet-fe/jet-serve" target="_blank" role="button">更多帮助</a>
+      </p>
+    </div>
+  </div>
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      {{#each projectPages}}
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="{{this}}"></div>
+        <p><a class="btn btn-primary" href="{{this}}" target="_blank">{{this}}</a></p>
+      </div>
+      {{/each}}
+    </div>
+    <!-- /.row -->
+    <!-- FOOTER -->
+    <hr>
+    <footer>
+      <p>© 2020 <a href="https://github.com/chanjet-fe" target="_blank">chanjet-fe</a>, <a
+          href="https://github.com/chanjet-fe" target="_blank">Jet-Serve静态网页多终端同步测试服务器</a></p>
+    </footer>
+  </div>
+
+  <div id="qrModal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="qr-img"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./zindex/js/jquery-2.1.3.min.js"></script>
+<script src="./zindex/js/bootstrap.min.js"></script>
+<script src="./zindex/js/qrcode.min.js"></script>
+<script>
+  (function () {
+    $(".qrcode-img").each(function () {
+      new QRCode($(this)[0], {
+        text: window.location.protocol + "//{{ip}}" + (window.location.port ? ':' + window.location.port : '') + "/" + $(this).data("href"),
+        width: 128,
+        height: 128,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    }).click(function () {
+      $('#qrModal').modal();
+      $('#qrModal .modal-title').html($(this).data("href"));
+      new QRCode($('#qrModal .qr-img')[0], {
+        text: window.location.protocol + "//{{ip}}" + (window.location.port ? ':' + window.location.port : '') + "/" + $(this).data("href"),
+        width: 300,
+        height: 300,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+      $('#qrModal').on('hidden.bs.modal', function (e) {
+        $('#qrModal .qr-img').html("");
+      });
+    });
+  })();
+</script>
+
+</html>

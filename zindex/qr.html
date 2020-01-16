@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>dist</title>
+  <link rel="stylesheet" href="./zindex/css/bootstrap.min.css">
+  <style>
+    a {
+      color: #333;
+    }
+
+    .marketing {
+      text-align: center;
+    }
+
+    .qrcode-img {
+      margin: 20px 0;
+    }
+
+    .qrcode-img canvas,
+    .qrcode-img img,
+    .qr-img canvas,
+    .qr-img img {
+      margin: 0 auto;
+    }
+
+    .modal-backdrop {
+      filter: alpha(opacity=100) !important;
+      opacity: 1 !important;
+    }
+
+    .jumbotron {
+      background-color: #282c34;
+      color: #fff;
+    }
+
+    .jumbotron h1 {
+      color: #61dafb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>dist</h1>
+      <p>
+        点击按钮链接打开项目页面，也可以扫描二维码在移动端同步浏览测试页面。
+      </p>
+      <p>
+        <a class="btn btn-primary" href="https://github.com/chanjet-fe/jet-serve" target="_blank" role="button">更多帮助</a>
+      </p>
+    </div>
+  </div>
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="index.html"></div>
+        <p><a class="btn btn-primary" href="index.html" target="_blank">index.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/404.html"></div>
+        <p><a class="btn btn-primary" href="docs/404.html" target="_blank">docs/404.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/index.html"></div>
+        <p><a class="btn btn-primary" href="docs/index.html" target="_blank">docs/index.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/guide/index.html"></div>
+        <p><a class="btn btn-primary" href="docs/guide/index.html" target="_blank">docs/guide/index.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/introduce/index.html"></div>
+        <p><a class="btn btn-primary" href="docs/introduce/index.html" target="_blank">docs/introduce/index.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/extend/babel.html"></div>
+        <p><a class="btn btn-primary" href="docs/extend/babel.html" target="_blank">docs/extend/babel.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/extend/eslint.html"></div>
+        <p><a class="btn btn-primary" href="docs/extend/eslint.html" target="_blank">docs/extend/eslint.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/extend/index.html"></div>
+        <p><a class="btn btn-primary" href="docs/extend/index.html" target="_blank">docs/extend/index.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/extend/react.html"></div>
+        <p><a class="btn btn-primary" href="docs/extend/react.html" target="_blank">docs/extend/react.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/extend/typescript.html"></div>
+        <p><a class="btn btn-primary" href="docs/extend/typescript.html" target="_blank">docs/extend/typescript.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/extend/vue.html"></div>
+        <p><a class="btn btn-primary" href="docs/extend/vue.html" target="_blank">docs/extend/vue.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/bower.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/bower.html" target="_blank">docs/config/bower.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/cdn.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/cdn.html" target="_blank">docs/config/cdn.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/common.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/common.html" target="_blank">docs/config/common.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/css.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/css.html" target="_blank">docs/config/css.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/custom.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/custom.html" target="_blank">docs/config/custom.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/directory.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/directory.html" target="_blank">docs/config/directory.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/fontmin.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/fontmin.html" target="_blank">docs/config/fontmin.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/imagemin.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/imagemin.html" target="_blank">docs/config/imagemin.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/index.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/index.html" target="_blank">docs/config/index.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/merge.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/merge.html" target="_blank">docs/config/merge.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/mock.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/mock.html" target="_blank">docs/config/mock.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/npm.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/npm.html" target="_blank">docs/config/npm.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/other.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/other.html" target="_blank">docs/config/other.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/proxy.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/proxy.html" target="_blank">docs/config/proxy.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/rem.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/rem.html" target="_blank">docs/config/rem.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/sftp.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/sftp.html" target="_blank">docs/config/sftp.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/svg.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/svg.html" target="_blank">docs/config/svg.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/vendor.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/vendor.html" target="_blank">docs/config/vendor.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/webp.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/webp.html" target="_blank">docs/config/webp.html</a></p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="qrcode-img" data-href="docs/config/webpack.html"></div>
+        <p><a class="btn btn-primary" href="docs/config/webpack.html" target="_blank">docs/config/webpack.html</a></p>
+      </div>
+    </div>
+    <!-- /.row -->
+    <!-- FOOTER -->
+    <hr>
+    <footer>
+      <p>© 2020 <a href="https://github.com/chanjet-fe" target="_blank">chanjet-fe</a>, <a
+          href="https://github.com/chanjet-fe" target="_blank">Jet-Serve静态网页多终端同步测试服务器</a></p>
+    </footer>
+  </div>
+
+  <div id="qrModal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="qr-img"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./zindex/js/jquery-2.1.3.min.js"></script>
+<script src="./zindex/js/bootstrap.min.js"></script>
+<script src="./zindex/js/qrcode.min.js"></script>
+<script>
+  (function () {
+    $(".qrcode-img").each(function () {
+      new QRCode($(this)[0], {
+        text: window.location.protocol + "//10.1.146.239" + (window.location.port ? ':' + window.location.port : '') + "/" + $(this).data("href"),
+        width: 128,
+        height: 128,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    }).click(function () {
+      $('#qrModal').modal();
+      $('#qrModal .modal-title').html($(this).data("href"));
+      new QRCode($('#qrModal .qr-img')[0], {
+        text: window.location.protocol + "//10.1.146.239" + (window.location.port ? ':' + window.location.port : '') + "/" + $(this).data("href"),
+        width: 300,
+        height: 300,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+      $('#qrModal').on('hidden.bs.modal', function (e) {
+        $('#qrModal .qr-img').html("");
+      });
+    });
+  })();
+</script>
+
+</html>
