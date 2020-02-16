@@ -1,5 +1,5 @@
 {
-  "name": "cjet-serve",
+  "name": "jet-serve",
   "version": "1.0.0",
   "description": "静态网页多终端同步测试服务器",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": "chanjet-fe/jet-serve",
   "engines": {
-    "node": ">=8"
+    "node": ">=8.10"
   },
   "keywords": [
     "serve",

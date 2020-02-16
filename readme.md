@@ -1,3 +1,4 @@
+<a href="https://www.npmjs.com/package/jet-serve"><img src="https://img.shields.io/npm/v/jet-serve.svg" alt="npm-version"></a> <img src="https://img.shields.io/npm/dm/jet-serve.svg" alt="download-num"> <img src="https://img.shields.io/badge/node-%3E=8.16.0-brightgreen.svg" alt="node"> <img src="https://img.shields.io/npm/l/jet-serve.svg" alt="license"> <img src="https://img.shields.io/badge/platform-MacOS%7CLinux%7CWindows-lightgrey.svg" alt="platform">
 # Jet-Serve
 
 使用Vue、React构建完成的单页面应用，或是包含html页面的静态资源，Jet-serve 可以帮助你快速搭建网页服务器，浏览、测试你构建完成的页面应用。并且不用在多个浏览器、多个设备间来回切换，假设桌子上有pc、ipad、iphone、android等设备，同时打开了某个页面，你在任何一个终端滚动页面、点击等行为也会同步到其他浏览器和设备中。
