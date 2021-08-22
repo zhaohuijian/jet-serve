@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "boxen": "^4.2.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "2.27.5",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
     "cross-spawn": "^7.0.1",
